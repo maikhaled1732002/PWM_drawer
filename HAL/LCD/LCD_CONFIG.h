@@ -1,0 +1,40 @@
+/*
+ * LCD_CONFIG.h
+ *
+ *  Created on: Oct 14, 2022
+ *      Author: engineer
+ */
+
+
+/*
+ * LCD_CONFIG.H
+ *
+ *  Created on: Oct 1, 2022
+ *      Author: engineer
+ */
+
+#ifndef HAL_LCD_LCD_CONFIG_H_
+#define HAL_LCD_LCD_CONFIG_H_
+#include "LCD_PRIVATE.H"
+/*options for fun set command
+ * FUNCTION_SET_4BIT_MODE_1LINE_5BY8_SIZE
+ FUNCTION_SET_4BIT_MODE_1LINE_5BY11_SIZE
+ FUNCTION_SET_4BIT_MODE_2LINE_5BY8_SIZE
+ FUNCTION_SET_4BIT_MODE_2LINE_5BY11_SIZE
+
+ options for display command
+ *DISPLAY_OFF_COMMAND
+ DISPLAY_ON_COMMAND
+ DISPLAY_ON_CUSROR
+ DISPLAY_ON_CURSOR_BLINK_ON
+ *
+ *options for entery mode
+ *     ENTRY_MODE_INC_NO_SHIFT
+       ENTRY_MODE_INC_WITH_SHIFT
+       ENTRY_MODE_DEC_NO_SHIFT
+      ENTRY_MODE_DEC_WITH_SHIFT
+ * */
+#define FUN_SET_MODE        FUNCTION_SET_4BIT_MODE_2LINE_5BY8_SIZE
+#define DISPLAY_COMMAND     DISPLAY_ON_CURSOR_BLINK_ON
+#define ENTRY_MODE_COMMAND     ENTRY_MODE_INC_NO_SHIFT
+#endif /* HAL_LCD_LCD_CONFIG_H_ */
